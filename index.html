@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fb">
+    <title>Genie Billing — Overview</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#" aria-label="Genie Billing home">
+          <span class="brand-mark" aria-hidden="true">g</span>
+          <span>genie<span class="brand-light">billing</span></span>
+        </a>
+        <div class="workspace-label">WORKSPACE</div>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#overview"><span class="nav-icon">◫</span>Overview</a>
+          <a class="nav-link" href="#invoices"><span class="nav-icon">▤</span>Invoices<span class="nav-count">12</span></a>
+          <a class="nav-link" href="#customers"><span class="nav-icon">♙</span>Customers</a>
+          <a class="nav-link" href="#payments"><span class="nav-icon">↗</span>Payments</a>
+          <a class="nav-link" href="#reports"><span class="nav-icon">▥</span>Reports</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <div class="help-icon">✦</div>
+            <strong>Need a hand?</strong>
+            <p>Our billing experts are here to help.</p>
+            <a href="mailto:support@example.com">Visit help center <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="nav-link settings-link" href="#settings"><span class="nav-icon">⚙</span>Settings</a>
+          <div class="profile">
+            <div class="avatar">JM</div>
+            <div class="profile-copy"><strong>Jordan Miller</strong><span>Acme Studio</span></div>
+            <button class="more-button" aria-label="Profile options">···</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content" id="overview">
+        <header class="topbar">
+          <button class="menu-button" id="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+          <div class="breadcrumbs">Workspace <span>/</span> <strong>Overview</strong></div>
+          <div class="topbar-actions">
+            <button class="icon-button notification-button" aria-label="Notifications">♧<i></i></button>
+            <div class="topbar-divider"></div>
+            <div class="topbar-date"><span class="date-dot"></span> Tuesday, October 29, 2024</div>
+          </div>
+        </header>
+
+        <section class="page-heading">
+          <div>
+            <p class="eyebrow">YOUR BUSINESS AT A GLANCE</p>
+            <h1>Good morning, Jordan <span class="wave">✦</span></h1>
+            <p class="heading-subtitle">Here’s what’s happening with your receivables today.</p>
+          </div>
+          <div class="heading-actions">
+            <button class="button button-secondary" id="report-button"><span aria-hidden="true">↓</span> Export report</button>
+            <button class="button button-primary" id="new-invoice-button"><span aria-hidden="true">＋</span> New invoice</button>
+          </div>
+        </section>
+
+        <section class="metrics-grid" aria-label="Billing summary">
+          <article class="metric-card">
+            <div class="metric-top"><span class="metric-label">Total outstanding</span><span class="metric-icon purple">◉</span></div>
+            <div class="metric-value">$24,680<span class="metric-cents">.00</span></div>
+            <div class="metric-foot"><span class="trend positive">↗ 12.8%</span><span>vs. last month</span></div>
+            <div class="sparkline purple-line" aria-hidden="true"><svg viewBox="0 0 160 38" preserveAspectRatio="none"><path d="M1 30 C16 27 17 20 29 24 S46 30 55 18 S71 23 83 14 S99 24 110 13 S126 18 137 8 S150 12 159 3"/></svg></div>
+          </article>
+          <article class="metric-card">
+            <div class="metric-top"><span class="metric-label">Collected this month</span><span class="metric-icon green">↗</span></div>
+            <div class="metric-value">$18,420<span class="metric-cents">.50</span></div>
+            <div class="metric-foot"><span class="trend positive">↗ 8.2%</span><span>vs. last month</span></div>
+            <div class="sparkline green-line" aria-hidden="true"><svg viewBox="0 0 160 38" preserveAspectRatio="none"><path d="M1 31 C13 26 19 29 30 21 S48 26 58 16 S73 24 84 16 S99 18 110 9 S124 18 137 7 S151 9 159 3"/></svg></div>
+          </article>
+          <article class="metric-card">
+            <div class="metric-top"><span class="metric-label">Overdue invoices</span><span class="metric-icon orange">!</span></div>
+            <div class="metric-value">08<span class="metric-unit"> invoices</span></div>
+            <div class="metric-foot"><span class="trend negative">↓ 2 invoices</span><span>vs. last month</span></div>
+            <div class="sparkline orange-line" aria-hidden="true"><svg viewBox="0 0 160 38" preserveAspectRatio="none"><path d="M1 8 C13 14 18 10 29 18 S44 13 56 24 S71 16 84 23 S100 17 111 28 S127 20 138 29 S151 25 159 34"/></svg></div>
+          </article>
+          <article class="metric-card">
+            <div class="metric-top"><span class="metric-label">Average time to pay</span><span class="metric-icon blue">◷</span></div>
+            <div class="metric-value">18<span class="metric-unit"> days</span></div>
+            <div class="metric-foot"><span class="trend positive">↓ 3 days</span><span>vs. last month</span></div>
+            <div class="sparkline blue-line" aria-hidden="true"><svg viewBox="0 0 160 38" preserveAspectRatio="none"><path d="M1 6 C14 11 19 8 30 15 S46 12 57 19 S73 14 84 23 S98 17 110 25 S127 21 138 29 S151 25 159 34"/></svg></div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel activity-panel">
+            <div class="panel-heading">
+              <div><h2>Payment activity</h2><p>Keep track of your incoming payments</p></div>
+              <button class="select-button" id="period-button">Last 7 days <span>⌄</span></button>
+            </div>
+            <div class="chart-summary"><strong>$8,240.00</strong><span class="trend positive">↗ 14.5%</span><span class="summary-period">compared to last week</span></div>
+            <div class="chart-wrap">
+              <div class="chart-y-labels"><span>$4k</span><span>$3k</span><span>$2k</span><span>$1k</span><span>$0</span></div>
+              <div class="chart-area">
+                <div class="chart-grid"><i></i><i></i><i></i><i></i><i></i></div>
+                <svg class="activity-chart" viewBox="0 0 700 190" preserveAspectRatio="none" role="img" aria-label="Payment activity rising through the week">
+                  <defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#7755e8" stop-opacity=".17"/><stop offset="100%" stop-color="#7755e8" stop-opacity="0"/></linearGradient></defs>
+                  <path class="chart-fill" d="M0 148 C36 143 43 102 91 113 S146 133 188 92 S239 106 280 84 S334 107 373 77 S425 94 466 52 S521 78 560 58 S615 62 654 28 S682 32 700 20 L700 190 L0 190 Z"/>
+                  <path class="chart-line" d="M0 148 C36 143 43 102 91 113 S146 133 188 92 S239 106 280 84 S334 107 373 77 S425 94 466 52 S521 78 560 58 S615 62 654 28 S682 32 700 20"/>
+                  <circle cx="466" cy="52" r="5" class="chart-point"/>
+                </svg>
+                <div class="chart-x-labels"><span>Wed, 23</span><span>Thu, 24</span><span>Fri, 25</span><span>Sat, 26</span><span>Sun, 27</span><span>Mon, 28</span><span>Tue, 29</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel breakdown-panel">
+            <div class="panel-heading"><div><h2>Invoice overview</h2><p>By current status</p></div><button class="more-button" aria-label="More invoice overview options">···</button></div>
+            <div class="donut-wrap">
+              <svg class="donut-chart" viewBox="0 0 160 160" role="img" aria-label="Invoice status breakdown">
+                <circle class="donut-track" cx="80" cy="80" r="59"/>
+                <circle class="donut-segment paid" cx="80" cy="80" r="59"/>
+                <circle class="donut-segment pending" cx="80" cy="80" r="59"/>
+                <circle class="donut-segment overdue" cx="80" cy="80" r="59"/>
+                <circle class="donut-segment draft" cx="80" cy="80" r="59"/>
+              </svg>
+              <div class="donut-center"><strong>48</strong><span>Total invoices</span></div>
+            </div>
+            <div class="legend">
+              <div><span class="legend-name"><i class="legend-dot paid-dot"></i>Paid</span><strong>28 <small>58%</small></strong></div>
+              <div><span class="legend-name"><i class="legend-dot pending-dot"></i>Pending</span><strong>12 <small>25%</small></strong></div>
+              <div><span class="legend-name"><i class="legend-dot overdue-dot"></i>Overdue</span><strong>06 <small>13%</small></strong></div>
+              <div><span class="legend-name"><i class="legend-dot draft-dot"></i>Draft</span><strong>02 <small>4%</small></strong></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel invoices-panel" id="invoices">
+          <div class="panel-heading invoice-heading">
+            <div><h2>Recent invoices</h2><p>A quick look at your latest billing activity</p></div>
+            <a class="view-all" href="#invoices">View all invoices <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="invoice-toolbar">
+            <div class="filter-tabs" role="group" aria-label="Filter invoices by status">
+              <button class="filter-tab active" data-status="all">All invoices <span>6</span></button>
+              <button class="filter-tab" data-status="Pending">Pending</button>
+              <button class="filter-tab" data-status="Overdue">Overdue</button>
+              <button class="filter-tab" data-status="Paid">Paid</button>
+            </div>
+            <label class="search-box"><span aria-hidden="true">⌕</span><input id="invoice-search" type="search" placeholder="Search invoices..." aria-label="Search invoices"></label>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th><input type="checkbox" aria-label="Select all invoices"></th><th>INVOICE</th><th>CUSTOMER</th><th>ISSUE DATE</th><th>DUE DATE</th><th>AMOUNT</th><th>STATUS</th><th></th></tr></thead>
+              <tbody id="invoice-rows">
+                <tr data-status="Pending" data-search="INV-2024-1087 Olivia Rhye">
+                  <td><input type="checkbox" aria-label="Select invoice INV-2024-1087"></td><td><span class="invoice-id">INV-2024-1087</span></td><td><span class="customer-cell"><span class="customer-avatar lavender">OR</span>Olivia Rhye</span></td><td>Oct 24, 2024</td><td>Nov 07, 2024</td><td class="amount">$2,400.00</td><td><span class="status-badge pending-badge"><i></i>Pending</span></td><td><button class="row-menu" aria-label="Options for invoice INV-2024-1087">···</button></td>
+                </tr>
+                <tr data-status="Overdue" data-search="INV-2024-1086 Phoenix Baker">
+                  <td><input type="checkbox" aria-label="Select invoice INV-2024-1086"></td><td><span class="invoice-id">INV-2024-1086</span></td><td><span class="customer-cell"><span class="customer-avatar mint">PB</span>Phoenix Baker</span></td><td>Oct 18, 2024</td><td>Oct 25, 2024</td><td class="amount">$1,850.00</td><td><span class="status-badge overdue-badge"><i></i>Overdue</span></td><td><button class="row-menu" aria-label="Options for invoice INV-2024-1086">···</button></td>
+                </tr>
+                <tr data-status="Paid" data-search="INV-2024-1085 Lana Steiner">
+                  <td><input type="checkbox" aria-label="Select invoice INV-2024-1085"></td><td><span class="invoice-id">INV-2024-1085</span></td><td><span class="customer-cell"><span class="customer-avatar peach">LS</span>Lana Steiner</span></td><td>Oct 16, 2024</td><td>Oct 30, 2024</td><td class="amount">$3,200.00</td><td><span class="status-badge paid-badge"><i></i>Paid</span></td><td><button class="row-menu" aria-label="Options for invoice INV-2024-1085">···</button></td>
+                </tr>
+                <tr data-status="Pending" data-search="INV-2024-1084 Demi Wilkinson">
+                  <td><input type="checkbox" aria-label="Select invoice INV-2024-1084"></td><td><span class="invoice-id">INV-2024-1084</span></td><td><span class="customer-cell"><span class="customer-avatar blue">DW</span>Demi Wilkinson</span></td><td>Oct 14, 2024</td><td>Oct 28, 2024</td><td class="amount">$980.00</td><td><span class="status-badge pending-badge"><i></i>Pending</span></td><td><button class="row-menu" aria-label="Options for invoice INV-2024-1084">···</button></td>
+                </tr>
+                <tr data-status="Paid" data-search="INV-2024-1083 Candice Wu">
+                  <td><input type="checkbox" aria-label="Select invoice INV-2024-1083"></td><td><span class="invoice-id">INV-2024-1083</span></td><td><span class="customer-cell"><span class="customer-avatar rose">CW</span>Candice Wu</span></td><td>Oct 12, 2024</td><td>Oct 26, 2024</td><td class="amount">$1,500.00</td><td><span class="status-badge paid-badge"><i></i>Paid</span></td><td><button class="row-menu" aria-label="Options for invoice INV-2024-1083">···</button></td>
+                </tr>
+                <tr data-status="Overdue" data-search="INV-2024-1082 Natali Craig">
+                  <td><input type="checkbox" aria-label="Select invoice INV-2024-1082"></td><td><span class="invoice-id">INV-2024-1082</span></td><td><span class="customer-cell"><span class="customer-avatar yellow">NC</span>Natali Craig</span></td><td>Oct 08, 2024</td><td>Oct 22, 2024</td><td class="amount">$4,100.00</td><td><span class="status-badge overdue-badge"><i></i>Overdue</span></td><td><button class="row-menu" aria-label="Options for invoice INV-2024-1082">···</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="empty-state" id="empty-state" hidden>No invoices match your search.</div>
+          </div>
+          <div class="table-footer"><span id="results-count">Showing <strong>6</strong> of 48 invoices</span><div class="pagination"><button aria-label="Previous page" disabled>‹</button><button class="page-current">1</button><button>2</button><button>3</button><span>…</span><button>8</button><button aria-label="Next page">›</button></div></div>
+        </section>
+
+        <footer class="footer"><span>© 2024 Genie Billing</span><span>Made for smoother cash flow <span class="footer-heart">♥</span></span></footer>
+      </main>
+    </div>
+    <div class="overlay" id="overlay" hidden></div>
+    <dialog class="invoice-dialog" id="invoice-dialog" aria-labelledby="dialog-title">
+      <form id="invoice-form">
+        <div class="dialog-heading"><div><p class="eyebrow">BILLING</p><h2 id="dialog-title">Create an invoice</h2></div><button type="button" class="dialog-close" id="close-dialog" aria-label="Close dialog">×</button></div>
+        <label>Customer name<input name="customer" required maxlength="60" placeholder="e.g. Alex Morgan"></label>
+        <div class="form-row"><label>Amount<input name="amount" type="number" min="0.01" step="0.01" required placeholder="0.00"></label><label>Due date<input name="dueDate" type="date" required></label></div>
+        <div class="dialog-actions"><button type="button" class="button button-secondary" id="cancel-dialog">Cancel</button><button type="submit" class="button button-primary">Create invoice</button></div>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
